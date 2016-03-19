@@ -1,0 +1,384 @@
+body {
+  min-height: 800px;
+  padding-top: 70px;
+  padding-left: 90px;
+}
+
+/*Navigation bar, vertical and horizontal*/
+.side-nav.fixed {
+    left: 0;
+    position: fixed;
+}
+
+.side-nav {
+    position: fixed;
+    width: 90px;
+    left: -105%;
+    top: 0;
+    margin: 0;
+    height: 100%;
+    /*height: calc(100% + 60px);*/
+    height: -moz-calc(100%);
+    padding-bottom: 60px;
+    background-color: #003574;
+    z-index: 999;
+    overflow-y: auto;
+    will-change: left;
+    margin-top: 50px; 
+}
+
+.side-nav {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+ul.side-nav.fixed li a {
+    font-size: 13px;
+    line-height: 44px;
+    height: 44px;
+}
+
+#slide-out {
+    padding: 0;
+}
+
+/*Horizontal*/
+.navbar-default {
+    background-color: #f8f8f8;
+    border-color: #f8f8f8;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.logo{
+    margin: 10px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+}
+
+.logo2{
+    margin: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 11px;
+}
+
+.navimg:hover{
+    background: #2c68b0;
+}
+
+/*
+.navimg:active, .active{
+    background:#2c68b0;
+}
+*/
+
+/* Select method Buttons paragraf */
+#select_method{
+    text-align: center;
+}
+
+/* Button methods */ 
+.method_btn{
+    background: #003574;
+    border: none;
+    padding: 30px 40px;
+    border-radius: 17px;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    color: white;
+    font-size: 20px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    vertical-align: middle;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.method_btn:hover {
+   background: #2c68b0;
+   border: none;
+}
+   
+.method_btn:active {
+   background: #2c68b0;
+   border: none;
+}
+
+.method_btn:focus {
+    outline: 0 !important;
+}
+
+small{
+    font-size: 14px;
+}
+
+/** Horizontal Nav method steps **/
+.nav-tabs2>li.active>a, 
+.nav-tabs2>li.active>a:focus, 
+.nav-tabs2>li.active>a:hover{
+    color: #003475;
+    cursor: default;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+}
+
+.nav-tabs2>li>a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+}
+
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+/** Logout **/
+.logout{
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/** Method title **/
+#method_name{
+    color:#003475;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+hr{
+    border: 3px solid #eee;
+    padding: 5px;
+    margin: 0;
+    margin-bottom: -5px;
+    margin-top: 6.5px;
+    background-color: #eee;
+}
+
+.btnEdit,
+.btnSave,
+.btnDelete{
+    margin-left: 15px;
+}
+
+#btnAdd{
+  color: #fff;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #003574;
+  border: 1px solid #fff;
+  font-weight: bold;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+}
+
+#btnAdd:hover{
+  color: #000;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  font-weight: bold;
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+}
+
+#btnAdd2{
+  color: #fff;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #003574;
+  border: 1px solid #fff;
+  font-weight: bold;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+}
+
+#btnAdd2:hover{
+  color: #000;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  font-weight: bold;
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+}
+
+/* Error messages */
+#error,
+#error2{
+    color: red;
+    font-size: 17px;
+    margin-left: 5px;
+}
+
+/* Tables */
+#tblData,
+#tblData2,
+#tblData3,
+#tblData4,
+#tblData5,
+#tblData6{
+    table-layout: fixed;
+}
+
+#tblAux{
+    display: none;
+}
+
+/* Criteria inputs */
+input[type=text]{
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing: border-box;
+}
+
+/* Rank input */
+input[type=number]{
+    text-align: center;
+    width: 25%;
+}
+
+/* Ratio Z input */
+#ratioZ{
+    text-align: center;
+    width: 10%;
+}
+
+#ratioZ::-webkit-inner-spin-button, 
+#ratioZ::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0; 
+}
+
+/* Small Note*/
+#note{
+    font-size: 12px;
+}
+
+/* Add white card with ranks input */
+#betweenRank1,
+#betweenRank2{
+    text-align: center;
+    width: 5%;
+}
+
+#betweenRank1::-webkit-inner-spin-button, 
+#betweenRank1::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0; 
+}
+
+#betweenRank2::-webkit-inner-spin-button, 
+#betweenRank2::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0; 
+}
+
+/* Add and remove white card to the table buttons */
+#btnAddWhiteCard{
+  color: #fff;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #003574;
+  border: 1px solid #fff;
+  font-weight: bold;
+  padding: 5px 15px;
+  font-size: 17px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+  margin-left: 25px;
+}
+
+#btnAddWhiteCard:hover{
+  color: #000;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  font-weight: bold;
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 5px 15px;
+  font-size: 17px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+  margin-left: 25px;
+}
+
+#btnRemoveWhiteCard{
+  color: #fff;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #003574;
+  border: 1px solid #fff;
+  font-weight: bold;
+  padding: 5px 15px;
+  font-size: 17px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+  margin-left: 35px;
+}
+
+#btnRemoveWhiteCard:hover{
+  color: #000;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  font-weight: bold;
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 5px 16px;
+  font-size: 17px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+  margin-left: 35px;
+}
+
+/* Sort Table button */
+#btnSort{
+  color: #fff;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #003574;
+  border: 1px solid #fff;
+  font-weight: bold;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+  margin-left: 20px;
+}
+
+#btnSort:hover{
+  color: #000;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  font-weight: bold;
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+  margin-left: 20px;
+}
+
+/* Select option box */
+select{
+    margin:10px;
+    background: #FFF;
+    color:#000;
+    text-shadow:0 1px 0 rgba(0,0,0,0.4);
+    width: 10%;
+    text-align: center;
+    text-indent: 5px; 
+}
+option:not(:checked) { 
+    background-color: white; 
+    color:#000;
+}
