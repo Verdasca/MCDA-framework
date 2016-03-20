@@ -134,7 +134,36 @@ ul.side-nav.fixed li a {
     outline: 0 !important;
 }
 
+.method_btn_tri_c{
+    background: #003574;
+    border: none;
+    padding: 58px 66px;
+    border-radius: 17px;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    color: white;
+    font-size: 20px;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    vertical-align: middle;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.method_btn_tri_c:hover{
+   background: #2c68b0;
+   border: none;
+}
+   
+.method_btn_tri_c:active{
+   background: #2c68b0;
+   border: none;
+}
+
+.method_btn_tri_c:focus{
+    outline: 0 !important;
+}
+
+/* Text */
 small{
     font-size: 14px;
 }
-
